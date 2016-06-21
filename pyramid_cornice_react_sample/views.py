@@ -5,7 +5,7 @@ from cornice import Service
 
 @view_config(route_name='home', renderer='webapp/%s/index.html')
 def my_view(request):
-    return {'project': 'pyramid_starter_seed'}
+    return {'project': 'pyramid_cornice_react_sample'}
 
 
 _USERS = [

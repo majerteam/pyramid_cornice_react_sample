@@ -6,12 +6,12 @@ import optparse
 import textwrap
 import pkg_resources
 
-def pyramid_starter_seed_clone():
+def pyramid_cornice_react_sample_clone():
     description = """\
     Print the deployment settings for a Pyramid application.  Example:
     'show_settings deployment.ini'
     """
-    usage = "usage: pyramid_starter_seed_clone new_package_name"
+    usage = "usage: pyramid_cornice_react_sample_clone new_package_name"
     parser = optparse.OptionParser(
         usage=usage,
         description=textwrap.dedent(description)
@@ -27,7 +27,7 @@ def pyramid_starter_seed_clone():
     print('Done!')
 
 
-def _translate(new_package_name, original_package_name='pyramid_starter_seed'):
+def _translate(new_package_name, original_package_name='pyramid_cornice_react_sample'):
     """ Translate package """
 
     def package_split(package_name, separator='.'):

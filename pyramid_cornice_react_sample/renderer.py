@@ -12,7 +12,7 @@ class AppDistRendererFactory:
         Usage:
         ... @view_config(route_name='home', renderer='webapp/%s/index.html')
         ... def my_view(request):
-        ...    return {'project': 'pyramid_starter_seed'}
+        ...    return {'project': 'pyramid_cornice_react_sample'}
 
         where %s will be filled with the "minify" setting provided by the 
         .ini file in use.

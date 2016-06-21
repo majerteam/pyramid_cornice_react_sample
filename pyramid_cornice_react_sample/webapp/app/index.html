@@ -13,16 +13,16 @@
             <link rel="shortcut icon" href="/favicon.ico">
         </tal:comment>
         <tal:icon>
-            <link rel="shortcut icon" href="${request.static_url('pyramid_starter_seed:webapp/%s/images/pyramid-16x16.png' % minify)}">
+            <link rel="shortcut icon" href="${request.static_url('pyramid_cornice_react_sample:webapp/%s/images/pyramid-16x16.png' % minify)}">
         </tal:icon>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- Vendor css -->
         <tal:production tal:condition="production">
-            <link href="${request.static_url('pyramid_starter_seed:webapp/%s/styles/vendor.css' % minify)}" rel="stylesheet">
+            <link href="${request.static_url('pyramid_cornice_react_sample:webapp/%s/styles/vendor.css' % minify)}" rel="stylesheet">
         </tal:production>
         <tal:not_production tal:condition="not:production">
-            <link href="${request.static_url('pyramid_starter_seed:webapp/bower_components/bootstrap/dist/css/bootstrap.css' )}" rel="stylesheet">
+            <link href="${request.static_url('pyramid_cornice_react_sample:webapp/bower_components/bootstrap/dist/css/bootstrap.css' )}" rel="stylesheet">
         </tal:not_production>
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -35,10 +35,10 @@
 
         <!-- App css (your theme) -->
         <tal:production tal:condition="production">
-            <link href="${request.static_url('pyramid_starter_seed:webapp/%s/styles/app.css' % minify)}" rel="stylesheet">
+            <link href="${request.static_url('pyramid_cornice_react_sample:webapp/%s/styles/app.css' % minify)}" rel="stylesheet">
         </tal:production>
         <tal:not_production tal:condition="not:production">
-            <link href="${request.static_url('pyramid_starter_seed:webapp/%s/styles/main.css' % minify)}" rel="stylesheet">
+            <link href="${request.static_url('pyramid_cornice_react_sample:webapp/%s/styles/main.css' % minify)}" rel="stylesheet">
         </tal:not_production>
         <!-- build:css(.tmp) styles/app.css -->
         <tal:comment replace="nothing">
@@ -64,7 +64,7 @@
             <script src="bower_components/jquery/dist/jquery.js"></script>
         </tal:production>
         <tal:not_production tal:condition="not:production">
-            <script src="${request.static_url('pyramid_starter_seed:webapp/bower_components/jquery/dist/jquery.js' )}"></script>
+            <script src="${request.static_url('pyramid_cornice_react_sample:webapp/bower_components/jquery/dist/jquery.js' )}"></script>
         </tal:not_production>
         <tal:production tal:condition="production">
             <script src="bower_components/react/react.js"></script>
@@ -72,9 +72,9 @@
             <script src="bower_components/babel/browser.min.js"></script>
         </tal:production>
         <tal:not_production tal:condition="not:production">
-            <script src="${request.static_url('pyramid_starter_seed:webapp/bower_components/react/react.js' )}"></script>
-            <script src="${request.static_url('pyramid_starter_seed:webapp/bower_components/react/react-dom.js' )}"></script>
-            <script src="${request.static_url('pyramid_starter_seed:webapp/bower_components/babel/browser.min.js' )}"></script>
+            <script src="${request.static_url('pyramid_cornice_react_sample:webapp/bower_components/react/react.js' )}"></script>
+            <script src="${request.static_url('pyramid_cornice_react_sample:webapp/bower_components/react/react-dom.js' )}"></script>
+            <script src="${request.static_url('pyramid_cornice_react_sample:webapp/bower_components/babel/browser.min.js' )}"></script>
         </tal:not_production>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -111,11 +111,11 @@
              By default enabled alert.js and dropdown.js. Enable the plugins you need to use.
         -->
         <tal:production tal:condition="production">
-            <script src="${request.static_url('pyramid_starter_seed:webapp/%s/scripts/plugins.js' )}"></script>
+            <script src="${request.static_url('pyramid_cornice_react_sample:webapp/%s/scripts/plugins.js' )}"></script>
         </tal:production>
         <tal:not_production tal:condition="not:production">
-            <script src="${request.static_url('pyramid_starter_seed:webapp/bower_components/bootstrap/js/alert.js' )}"></script>
-            <script src="${request.static_url('pyramid_starter_seed:webapp/bower_components/bootstrap/js/dropdown.js' )}"></script>
+            <script src="${request.static_url('pyramid_cornice_react_sample:webapp/bower_components/bootstrap/js/alert.js' )}"></script>
+            <script src="${request.static_url('pyramid_cornice_react_sample:webapp/bower_components/bootstrap/js/dropdown.js' )}"></script>
         </tal:not_production>
         <!-- build:js scripts/plugins.js -->
         <tal:comment replace="nothing">
@@ -132,10 +132,10 @@
                  DISABLED BY DEFAULT, remove the parent tal:comment.
             -->
             <tal:production tal:condition="production">
-                <script src="${request.static_url('pyramid_starter_seed:webapp/%s/scripts/app.js' % minify)}"></script>
+                <script src="${request.static_url('pyramid_cornice_react_sample:webapp/%s/scripts/app.js' % minify)}"></script>
             </tal:production>
             <tal:not_production tal:condition="not:production">
-                <script type='text/babel' src="${request.static_url('pyramid_starter_seed:webapp/%s/scripts/main.jsx' % minify)}"></script>
+                <script type='text/babel' src="${request.static_url('pyramid_cornice_react_sample:webapp/%s/scripts/main.jsx' % minify)}"></script>
             </tal:not_production>
         <tal:comment replace="nothing">
             <!-- build:js({app,.tmp}) scripts/app.js -->

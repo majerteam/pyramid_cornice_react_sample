@@ -16,9 +16,9 @@ requires = [
     'cornice',
     ]
 
-setup(name='pyramid_starter_seed',
+setup(name='pyramid_cornice_react_sample',
       version='0.0',
-      description='pyramid_starter_seed',
+      description='pyramid_cornice_react_sample',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
         "Programming Language :: Python",
@@ -35,11 +35,11 @@ setup(name='pyramid_starter_seed',
       zip_safe=False,
       install_requires=requires,
       tests_require=requires,
-      test_suite="pyramid_starter_seed",
+      test_suite="pyramid_cornice_react_sample",
       entry_points="""\
       [paste.app_factory]
-      main = pyramid_starter_seed:main
+      main = pyramid_cornice_react_sample:main
       [console_scripts]
-      pyramid_starter_seed_clone = pyramid_starter_seed.scripts:pyramid_starter_seed_clone
+      pyramid_cornice_react_sample_clone = pyramid_cornice_react_sample.scripts:pyramid_cornice_react_sample_clone
       """,
       )
