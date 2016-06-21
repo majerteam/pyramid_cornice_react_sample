@@ -1,0 +1,11 @@
+{
+  "name": "webapp",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "jquery": "~1.11.0",
+    "react": "~15.1.0",
+    "react-bootstrap": "~0.29.4"
+  },
+  "devDependencies": {}
+}
